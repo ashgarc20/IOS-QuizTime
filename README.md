@@ -1,2 +1,131 @@
 # IOS-QuizTime
 CodePath IOS group project
+
+Unit 8: Group Milestone - README 
+===
+
+# QUIZTIME
+
+## Table of Contents
+1. [Overview](#Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
+2. [Schema](#Schema)
+
+## Overview
+### Description
+Quiz Time is an application that allows users to create, save, delete, edit, and take their own quizzes. Once created, the user should be able to see their own library of saved quizzes as well as other people's quizzes. The user will be able to search through other people's quizzes by author, quiz name, or quiz question using a filtered search bar. 
+
+### App Evaluation
+
+- **Category:** Education
+- **Mobile:**  Because it is mobile, users will be able to use the app's features from any location and reload all recently added quiz sets from other users.
+- **Story:** Once a quiz set is created or a set from another user is found, this app will allow users to study for any topic, anywhere.
+- **Market:** Anyone who needs to study for something can use this app to support them. It can help people study by allowing them to create quiz sets or find existing quiz sets to study for their topic.
+- **Habit:** This app could be used as frequently or infrequently as the user desires, depending on how much they need to study for and what exactly they are looking for.
+- **Scope:** To begin, we would allow users to modify their quiz library in any way they see fit, as well as view other people's libraries and search the local library. More features, such as cloning other users' quiz sets, randomizing questions when the user quizzes themselves, and interactive profiles, will have a large potential use.
+
+## Product Spec
+
+### 1. User Stories (Required and Optional)
+
+**Required Must-have Stories**
+
+* User can login
+* User can logout
+* User can create a new account
+* User can create a quiz set with description
+* User can add questions and answers to specific quiz sets
+* User can save quiz sets
+* User can delete quiz sets
+* User can delete quiz questions/answers
+* User can edit quiz set names and descriptions
+* User can edit quiz questions/answers
+* User can view all the quiz sets they have created 
+* User can view all the quiz sets other users have created
+* User can take a quiz from their library
+* User can take a quiz that other users have posted
+* User can search through feed with filtered search bar
+
+**Optional Nice-to-have Stories**
+
+* User can stay logged in 
+* User can clone other user quiz sets
+* Quiz questions/answers will be randomizes
+
+### 2. Screen Archetypes
+
+* Login
+   * User can create a new account
+   * User can login
+   * User can logout
+   * [Optional] User can stay logged in 
+* Landing Page - Left Navigation Button
+   * User can view all the quiz sets they have created 
+* Create New Quiz Set
+   * User can create a quiz set with name and description
+   * User can save quiz sets
+   * User will be prompted to View Quiz Set Q/A 
+* Edit Quiz Set Name & Description
+   * Upon selecting edit button next to specific quiz set from the landing page
+   * User can edit quiz set name and description
+* View Quiz Set Questions/Answers
+   * Upon user selecting specific quiz set from the landing page
+   * User can delete selected quiz set
+   * User can delete quiz questions/answers
+* Create New Question/Answer
+   * User can add questions and answers to selected quiz set
+* Edit Quiz Set Questions/Answers
+   * Upon selection of specific question/answer in View Quiz Set Q/A
+   * User can edit quiz questions/answers
+* Landing Page - Right Navigation Button
+   * User can view all the quiz sets other users have created
+   * User can search through feed with filtered search bar (3 options)
+   * User can take a quiz that other users have posted upon selection
+   * [Optional] User can clone other user quiz sets (popup)
+* Quiz Time
+   * User can take the quiz from selected quiz set
+   * [Optional] Quiz questions/answers will be randomizes
+   
+### 3. Navigation
+
+**Tab Navigation** (Tab to Screen)
+
+* Landing Page - Left Navigation Button
+* Landing Page - Right Navigation Button
+
+**Flow Navigation** (Screen to Screen)
+
+* Login Screen
+   => Landing Page - Left Navigation Button
+* User Creates Account Screen
+   => Landing Page - Left Navigation Button
+* Landing Page - Left Navigation Button
+   => Create New Quiz Set
+    => Edit Quiz Set Name & Description
+   => View Quiz Set Questions/Answers
+* View Quiz Set Questions/Answers
+   => Create New Question/Answer
+   => Edit Quiz Set Questions/Answers
+   => Quiz Time
+* Landing Page - Right Navigation Button
+   => Quiz Time
+   => [Optional] Clone Set popup
+* [Optional] Clone Set popup
+   => [Optional] Landing Page - Left Navigation Button
+
+## Wireframes
+<img src="https://cdn.discordapp.com/attachments/759943736766758962/961042667872088094/20220320_234840.jpg" width=600>
+
+### [BONUS] Digital Wireframes & Mockups
+<img src="https://cdn.discordapp.com/attachments/759943736766758962/961042505468637234/IOS-group-project-digital-mockup.JPG" width=600>
+### [BONUS] Interactive Prototype
+
+## Schema 
+[This section will be completed in Unit 9]
+### Models
+[Add table of models]
+### Networking
+- [Add list of network requests by screen ]
+- [Create basic snippets for each Parse network request]
+- [OPTIONAL: List endpoints if using existing API such as Yelp]

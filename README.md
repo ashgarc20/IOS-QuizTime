@@ -43,6 +43,7 @@ Quiz Time is an application that allows users to create, save, delete, edit, and
 * User can edit quiz questions/answers
 * User can view all the quiz sets they have created 
 * User can view all the quiz sets other users have created
+* User can view all selected quiz set questions and answers 
 * User can take a quiz from their library
 * User can take a quiz that other users have posted
 * User can search through feed with filtered search bar
@@ -121,11 +122,63 @@ Quiz Time is an application that allows users to create, save, delete, edit, and
 <img src="https://cdn.discordapp.com/attachments/759943736766758962/961042505468637234/IOS-group-project-digital-mockup.JPG" width=600>
 ### [BONUS] Interactive Prototype
 
-## Schema 
-[This section will be completed in Unit 9]
+ ## Schema 
+
 ### Models
-[Add table of models]
+
+User
+| Property  | Type | Description |
+| ------------- | ------------- | ------------- |
+| user_name  |  String  | unique username for each user |
+| password  | String  | Password for every user |
+
+Quiz
+| Property | Type | Description |
+| ------------- | ------------- | ------------- |
+| objectID  | String  | Unique id for each quiz set |
+| author| User | To keep track of who created quiz set | 
+| description | String | Description for quiz set |
+| Questions | Array[Strings] | Keep track of corresponding Q/A |
+| createdAt | DateTime | Allow user to see when user created quiz |
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
+* Login 
+   * (Read/GET) Fetch user credentials
+   * (Create/POST) Create a new user
+* Landing Page - Left Navigation Button
+    * (Read/GET) List quiz set names and descriptions that current user has created
+* Create New Quiz Set
+   * (Create/POST) Create new quiz set with name and description
+* Edit Quiz Set Name & Description
+   * (Update/PUT) Change quiz set name and description
+*  View Quiz Set Questions/Answers
+   * (Read/GET) List of questions and answers is current set
+   * (Delete) Delete selected question and answer
+   * (Delete) Delete entire quiz set
+*  Create New Question/Answer
+   * (Create/POST) Create new question and answer in current quiz set
+*  Edit Quiz Set Questions/Answers
+   * (Update/PUT) Change question or answer form current card in quiz set
+*  Landing Page - Right Navigation Button
+   * (Read/GET) Fetch all quiz set names, descriptions, author, and time stamps
+   * (Read/GET) From query, use LIKE keyword to use filtered search bar
+* Quiz Time
+   * (Read/GET) Fetch quiz set name, description, questions and answers
+
+Create basic snippets for each Parse network request]
+// iOS
+// (Read/GET) Query all posts where user is author
+let query = PFQuery(className:"Post")
+query.whereKey("author", equalTo: currentUser)
+query.order(byDescending: "createdAt")
+query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
+   if let error = error {
+      print(error.localizedDescription)
+   } else if let posts = posts {
+      print("Successfully retrieved \(posts.count) posts.")
+      // TODO: Do something with posts...
+   }
+}
+
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+

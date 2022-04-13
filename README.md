@@ -5,12 +5,14 @@ Unit 8: Group Milestone - README
 ===
 
 # QUIZTIME
+ ## Milestone 1 - Build Progress
 
 ## Table of Contents
 1. [Overview](#Overview)
-1. [Product Spec](#Product-Spec)
-1. [Wireframes](#Wireframes)
-2. [Schema](#Schema)
+2. [Product Spec](#Product-Spec)
+3. [Wireframes](#Wireframes)
+4. [Schema](#Schema)
+5. [Milestone 1 - Build Progress](#Milestone-1-Build-Progress)
 
 ## Overview
 ### Description
@@ -31,22 +33,23 @@ Quiz Time is an application that allows users to create, save, delete, edit, and
 
 **Required Must-have Stories**
 
-* User can login
-* User can logout
-* User can create a new account
-* User can create a quiz set with description
-* User can add questions and answers to specific quiz sets
-* User can save quiz sets
-* User can delete quiz sets
-* User can delete quiz questions/answers
-* User can edit quiz set names and descriptions
-* User can edit quiz questions/answers
-* User can view all the quiz sets they have created 
-* User can view all the quiz sets other users have created
-* User can view all selected quiz set questions and answers 
-* User can take a quiz from their library
-* User can take a quiz that other users have posted
-* User can search through feed with filtered search bar
+- [x] User can login
+- [ ] User can logout
+- [x] User can create a new account
+- [x] Set up parse server
+- [ ] User can create a quiz set with description
+- [ ] User can add questions and answers to specific quiz sets
+- [ ] User can save quiz sets
+- [ ] User can delete quiz sets
+- [ ] User can delete quiz questions/answers
+- [ ] User can edit quiz set names and descriptions
+- [ ] User can edit quiz questions/answers
+- [ ] User can view all the quiz sets they have created 
+- [ ] User can view all the quiz sets other users have created
+- [ ] User can view all selected quiz set questions and answers 
+- [ ] User can take a quiz from their library
+- [ ] User can take a quiz that other users have posted
+- [ ] User can search through feed with filtered search bar
 
 **Optional Nice-to-have Stories**
 
@@ -182,3 +185,8 @@ query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
+ ## Milestone 1 - Build Progress
+ 
+<img src='http://g.recordit.co/PyD0lTt1xx.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/C4Y8850uLQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/FukCe3tOmg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />

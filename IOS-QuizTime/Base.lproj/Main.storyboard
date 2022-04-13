@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="IOS_QuizTime" customModuleProvider="target" sceneMemberID="viewController">
@@ -77,36 +77,124 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="IX9-Ya-CTK"/>
                     <connections>
                         <outlet property="passwordField" destination="J5l-Bv-iOT" id="tJ6-vh-epD"/>
                         <outlet property="usernameField" destination="wT9-u9-JfJ" id="Llj-is-exT"/>
-                        <segue destination="elq-sz-aKB" kind="presentation" identifier="loginSegue" id="3A1-Ck-w4x"/>
+                        <segue destination="tpm-42-Mr3" kind="presentation" identifier="loginSegue" id="HIw-yY-ab1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="83.705357142857139"/>
+            <point key="canvasLocation" x="790" y="-735"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cd2-4u-45G">
+            <objects>
+                <tabBarController modalPresentationStyle="fullScreen" id="tpm-42-Mr3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1o7-1d-Jkd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="elq-sz-aKB" kind="relationship" relationship="viewControllers" id="TIs-pe-Gv5"/>
+                        <segue destination="LgI-dO-TVF" kind="relationship" relationship="viewControllers" id="vqJ-AW-8aZ"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJb-cz-Vzl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="791" y="-16"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="ixo-J6-gWb">
             <objects>
-                <viewController id="XEx-e2-TgE" customClass="FeedViewController" customModule="IOS_QuizTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="XEx-e2-TgE" customClass="FeedViewController" customModule="IOS_QuizTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wUV-nW-VI0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You will soon see your quiz sets here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmp-Jr-KO2">
+                                <rect key="frame" x="65" y="438" width="284" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="cG9-Ds-tyu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="PgD-W1-Dtp"/>
+                    <navigationItem key="navigationItem" id="PgD-W1-Dtp">
+                        <barButtonItem key="rightBarButtonItem" title="Add Quiz Set" id="qND-aC-b6W">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="LoU-iu-2gy" kind="show" id="5fv-uq-O4E"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gzh-PI-rGL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1652" y="84"/>
+            <point key="canvasLocation" x="28.985507246376812" y="1445.7589285714284"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Create New Quiz Set View Controller-->
+        <scene sceneID="Owq-h0-68u">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="LoU-iu-2gy" customClass="CreateNewQuizSetViewController" customModule="IOS_QuizTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mfO-uJ-DNi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You will be able to add quiz sets soon!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KGy-wz-jqK">
+                                <rect key="frame" x="63" y="438" width="289" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vks-th-2ht"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Osg-a2-thl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5w2-mn-YB0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="789.85507246376812" y="2173.6607142857142"/>
+        </scene>
+        <!--Right Feed View Controller-->
+        <scene sceneID="UrR-JB-bFd">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="UDB-gM-r0S" customClass="RightFeedViewController" customModule="IOS_QuizTime" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SqV-uB-19G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You will soon see other user quiz sets here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlX-Gz-N0F">
+                                <rect key="frame" x="43" y="438" width="328" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vr6-8X-eNI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Jw9-E5-pW0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gm3-7d-eaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1529" y="1446"/>
+        </scene>
+        <!--MY LIBRARY-->
         <scene sceneID="oYt-HH-j2p">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="elq-sz-aKB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="MY LIBRARY" id="UQI-Bl-omH">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QRz-uO-7NW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -119,9 +207,31 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBf-GO-aRv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886.95652173913049" y="83.705357142857139"/>
+            <point key="canvasLocation" x="29" y="713"/>
+        </scene>
+        <!--FEED-->
+        <scene sceneID="23D-8d-ozr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LgI-dO-TVF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="FEED" id="hK9-Vk-m1L">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="T7x-am-eIp">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UDB-gM-r0S" kind="relationship" relationship="rootViewController" id="bUj-BV-4lm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ujc-dj-1GE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1528.985507246377" y="712.5"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

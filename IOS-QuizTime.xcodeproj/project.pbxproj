@@ -17,6 +17,8 @@
 		2258CF8F2806044400BE3227 /* IOS_QuizTimeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258CF8E2806044400BE3227 /* IOS_QuizTimeUITestsLaunchTests.swift */; };
 		2258CF9E280670DA00BE3227 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258CF9D280670DA00BE3227 /* FeedViewController.swift */; };
 		2258CFA02806711400BE3227 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258CF9F2806711400BE3227 /* LoginViewController.swift */; };
+		2258CFA228068D1E00BE3227 /* CreateNewQuizSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258CFA128068D1E00BE3227 /* CreateNewQuizSetViewController.swift */; };
+		2258CFA428068FB200BE3227 /* RightFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258CFA328068FB200BE3227 /* RightFeedViewController.swift */; };
 		592E216AFBE639274B7D12A4 /* Pods_IOS_QuizTime_IOS_QuizTimeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A19F6981BCA29E765F2E9A1 /* Pods_IOS_QuizTime_IOS_QuizTimeUITests.framework */; };
 		A4753E7A1B7ECFE4B35BCE38 /* Pods_IOS_QuizTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A005D0468FB000F02C58147F /* Pods_IOS_QuizTime.framework */; };
 		ADD033BC33AACAB20BDDF2CC /* Pods_IOS_QuizTimeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C769F67007F4A6B0B1FB5AD /* Pods_IOS_QuizTimeTests.framework */; };
@@ -54,6 +56,8 @@
 		2258CF8E2806044400BE3227 /* IOS_QuizTimeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_QuizTimeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		2258CF9D280670DA00BE3227 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		2258CF9F2806711400BE3227 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2258CFA128068D1E00BE3227 /* CreateNewQuizSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewQuizSetViewController.swift; sourceTree = "<group>"; };
+		2258CFA328068FB200BE3227 /* RightFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightFeedViewController.swift; sourceTree = "<group>"; };
 		3A19F6981BCA29E765F2E9A1 /* Pods_IOS_QuizTime_IOS_QuizTimeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_QuizTime_IOS_QuizTimeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56F48CF1A45D3B802F94B0C1 /* Pods-IOS-QuizTime-IOS-QuizTimeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOS-QuizTime-IOS-QuizTimeUITests.debug.xcconfig"; path = "Target Support Files/Pods-IOS-QuizTime-IOS-QuizTimeUITests/Pods-IOS-QuizTime-IOS-QuizTimeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C769F67007F4A6B0B1FB5AD /* Pods_IOS_QuizTimeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IOS_QuizTimeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,8 @@
 				2258CF792806044400BE3227 /* Info.plist */,
 				2258CF9D280670DA00BE3227 /* FeedViewController.swift */,
 				2258CF9F2806711400BE3227 /* LoginViewController.swift */,
+				2258CFA128068D1E00BE3227 /* CreateNewQuizSetViewController.swift */,
+				2258CFA328068FB200BE3227 /* RightFeedViewController.swift */,
 			);
 			path = "IOS-QuizTime";
 			sourceTree = "<group>";
@@ -409,10 +415,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2258CFA228068D1E00BE3227 /* CreateNewQuizSetViewController.swift in Sources */,
 				2258CFA02806711400BE3227 /* LoginViewController.swift in Sources */,
 				2258CF6C2806044300BE3227 /* AppDelegate.swift in Sources */,
 				2258CF9E280670DA00BE3227 /* FeedViewController.swift in Sources */,
 				2258CF6E2806044300BE3227 /* SceneDelegate.swift in Sources */,
+				2258CFA428068FB200BE3227 /* RightFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

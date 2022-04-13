@@ -1,0 +1,6 @@
+framework module Pods_IOS_QuizTime_IOS_QuizTimeUITests {
+  umbrella header "Pods-IOS-QuizTime-IOS-QuizTimeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

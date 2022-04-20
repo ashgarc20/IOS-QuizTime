@@ -38,23 +38,13 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         query.limit = 20
         
         query.findObjectsInBackground{ (quizSets, error) in
-            
-            
             if quizSets != nil{
-                //if query.get("Author") == currentUser{
                     self.quizSets = quizSets!
                     self.quizSetsTableView.reloadData()
-                    //print(quizSets["Author"])
-                
-                //}
-                //print("helllo")
             } else{
                 print("error")
             }
-            
         }
-        
-            
     }
     
     // End of Code
@@ -67,16 +57,26 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "QuizSetCell") as! QuizSetCell
-        
         let quizSet = quizSets[indexPath.row]
-        
-        //let user = quizSet["Author"] as! PFUser
-        
+                
         cell.quizSetNameLabel.text = (quizSet["QuizName"] as! String)
-        
         cell.quizSetDesLabel.text = (quizSet["QuizDescription"] as! String)
         
         return cell
     }
     // End of Required functions for data source
+    
+    // Code for temp page
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("loading data...")
+        // Find selected quiz set
+        let cell = sender as! UITableViewCell
+        let indexPath = quizSetsTableView.indexPath(for: cell)!
+        let currentQuizSet = quizSets[indexPath.row]
+        
+        // Pass the selected quiz set to QAviewController
+        let QAViewControllers = segue.destination as! QAViewController
+        QAViewControllers.quizSet = currentQuizSet
+    }
+    // End of Code for temp page
 }

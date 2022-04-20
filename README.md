@@ -39,7 +39,7 @@ Quiz Time is an application that allows users to create, save, delete, edit, and
 - [x] User can create a new account
 - [x] Set up parse server
 - [x] User can create a quiz set with description
-- [ ] User can add questions and answers to specific quiz sets
+- [x] User can add questions and answers to specific quiz sets
 - [x] User can save quiz sets
 - [ ] User can delete quiz sets
 - [ ] User can delete quiz questions/answers
@@ -198,3 +198,4 @@ query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
 <img src='http://g.recordit.co/9KtgFxBGFn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/rDL6zNEGkv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/LNN8IsNJxs.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/HKjj19m3BM.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />

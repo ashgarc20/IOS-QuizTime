@@ -13,6 +13,7 @@ Unit 8: Group Milestone - README
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
 5. [Milestone 1 - Build Progress](#Milestone-1-Build-Progress)
+6. [Milestone 1 - Build Progress](#Milestone-2-Build-Progress)
 
 ## Overview
 ### Description

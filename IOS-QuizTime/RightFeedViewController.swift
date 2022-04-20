@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class RightFeedViewController: UIViewController {
 
@@ -14,6 +15,19 @@ class RightFeedViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func onLogoutButtonRight(_ sender: Any) {
+        
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewControllers = main.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else { return}
+        
+        delegate.window?.rootViewController = loginViewControllers
+    }
+    
     
 
     /*

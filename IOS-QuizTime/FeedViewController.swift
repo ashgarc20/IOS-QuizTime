@@ -47,14 +47,10 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
                     //print(quizSets["Author"])
                 
                 //}
-                //print("helllo")
             } else{
                 print("error")
             }
-            
         }
-        
-            
     }
     
     // End of Code
@@ -79,4 +75,20 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         return cell
     }
     // End of Required functions for data source
+    
+    // Action Outlets
+    
+    @IBAction func onLogoutButtonLeft(_ sender: Any) {
+        
+        PFUser.logOut()
+        
+        let main = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewControllers = main.instantiateViewController(withIdentifier: "LoginViewController")
+        
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene, let delegate = windowScene.delegate as? SceneDelegate else { return}
+        
+        delegate.window?.rootViewController = loginViewControllers
+    }
+    
+    // End of Action Outlets
 }

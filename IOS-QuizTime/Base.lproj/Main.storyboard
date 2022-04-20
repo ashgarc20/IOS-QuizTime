@@ -11,7 +11,7 @@
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="IOS_QuizTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="IOS_QuizTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="cd2-4u-45G">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="tpm-42-Mr3" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" modalPresentationStyle="fullScreen" id="tpm-42-Mr3" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1o7-1d-Jkd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -178,7 +178,16 @@
                         <viewLayoutGuide key="safeArea" id="cG9-Ds-tyu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="svR-xm-FZ4"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="PgD-W1-Dtp">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="hHY-Rk-oqG">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onLogoutButtonLeft:" destination="XEx-e2-TgE" id="mlc-LJ-XEQ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Quiz Set" id="qND-aC-b6W">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -186,6 +195,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="quizSetsTableView" destination="q1R-DY-Dxi" id="Tke-oz-pgS"/>
                     </connections>
@@ -281,7 +291,14 @@
                         <viewLayoutGuide key="safeArea" id="vr6-8X-eNI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Jw9-E5-pW0"/>
+                    <navigationItem key="navigationItem" id="Jw9-E5-pW0">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="BG0-l8-NYJ">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="onLogoutButtonRight:" destination="UDB-gM-r0S" id="9Oh-os-wPM"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gm3-7d-eaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

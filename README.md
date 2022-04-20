@@ -34,17 +34,17 @@ Quiz Time is an application that allows users to create, save, delete, edit, and
 **Required Must-have Stories**
 
 - [x] User can login
-- [ ] User can logout
+- [x] User can logout
 - [x] User can create a new account
 - [x] Set up parse server
-- [ ] User can create a quiz set with description
+- [x] User can create a quiz set with description
 - [ ] User can add questions and answers to specific quiz sets
-- [ ] User can save quiz sets
+- [x] User can save quiz sets
 - [ ] User can delete quiz sets
 - [ ] User can delete quiz questions/answers
 - [ ] User can edit quiz set names and descriptions
 - [ ] User can edit quiz questions/answers
-- [ ] User can view all the quiz sets they have created 
+- [x] User can view all the quiz sets they have created 
 - [ ] User can view all the quiz sets other users have created
 - [ ] User can view all selected quiz set questions and answers 
 - [ ] User can take a quiz from their library
@@ -53,9 +53,9 @@ Quiz Time is an application that allows users to create, save, delete, edit, and
 
 **Optional Nice-to-have Stories**
 
-* User can stay logged in 
-* User can clone other user quiz sets
-* Quiz questions/answers will be randomizes
+- [x] User can stay logged in 
+- [ ] User can clone other user quiz sets
+- [ ] Quiz questions/answers will be randomizes
 
 ### 2. Screen Archetypes
 
@@ -190,3 +190,10 @@ query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
 <img src='http://g.recordit.co/PyD0lTt1xx.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/C4Y8850uLQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/FukCe3tOmg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+ ## Milestone 2 - Build Progress
+ 
+<img src='http://g.recordit.co/W0TB16lyzO.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/9KtgFxBGFn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/rDL6zNEGkv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://g.recordit.co/LNN8IsNJxs.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />

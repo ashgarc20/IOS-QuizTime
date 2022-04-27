@@ -1,19 +1,20 @@
 //
-//  QuizSetCell.swift
+//  OtherQuizSetCell.swift
 //  IOS-QuizTime
 //
-//  Created by macOS on 4/13/22.
+//  Created by macOS on 4/26/22.
 //
 
 import UIKit
 
-class QuizSetCell: UITableViewCell {
+class OtherQuizSetCell: UITableViewCell {
     
     // Outlets
-    @IBOutlet weak var quizSetNameLabel: UILabel!
-    @IBOutlet weak var quizSetDesLabel: UILabel!
+    @IBOutlet weak var otherQuizSetNameLabel: UILabel!
+    @IBOutlet weak var otherQuizSetDescLabel: UILabel!
+    @IBOutlet weak var otherAuthorLabel: UILabel!
     // End of Outlets
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -24,11 +25,5 @@ class QuizSetCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
-    // Action Outlets
-    @IBAction func quizSetEditButton(_ sender: Any) {
-    }
-    
-    // End of Action Outlets
 
 }

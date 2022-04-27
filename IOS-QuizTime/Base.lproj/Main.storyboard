@@ -178,9 +178,7 @@
                         <viewLayoutGuide key="safeArea" id="cG9-Ds-tyu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" id="svR-xm-FZ4"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" id="PgD-W1-Dtp">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="hHY-Rk-oqG">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -280,13 +278,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You will soon see other user quiz sets here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlX-Gz-N0F">
-                                <rect key="frame" x="43" y="438" width="328" height="21"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="tPF-fF-4Gq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="OtherQuizSetCell" rowHeight="130" id="pS1-qy-Pck" customClass="OtherQuizSetCell" customModule="IOS_QuizTime" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="130"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pS1-qy-Pck" id="Pxd-qt-GXE">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Quiz Set Name " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyT-Ac-4jS">
+                                                    <rect key="frame" x="25" y="30" width="174.5" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Quiz Set Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbX-ZI-0qO">
+                                                    <rect key="frame" x="25" y="65.5" width="183.5" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Other Author" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MUb-fd-LHs">
+                                                    <rect key="frame" x="295" y="43" width="99" height="43"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nbX-ZI-0qO" firstAttribute="leading" secondItem="Pxd-qt-GXE" secondAttribute="leading" constant="25" id="2fy-nf-bfK"/>
+                                                <constraint firstItem="MUb-fd-LHs" firstAttribute="top" secondItem="Pxd-qt-GXE" secondAttribute="top" constant="43" id="BQ7-OY-EPN"/>
+                                                <constraint firstItem="nbX-ZI-0qO" firstAttribute="top" secondItem="eyT-Ac-4jS" secondAttribute="bottom" constant="15" id="FGe-Ap-ndC"/>
+                                                <constraint firstItem="MUb-fd-LHs" firstAttribute="leading" secondItem="nbX-ZI-0qO" secondAttribute="trailing" constant="86.5" id="Swn-Bw-Yx0"/>
+                                                <constraint firstItem="eyT-Ac-4jS" firstAttribute="top" secondItem="Pxd-qt-GXE" secondAttribute="top" constant="30" id="Wz5-62-K6s"/>
+                                                <constraint firstAttribute="bottom" secondItem="MUb-fd-LHs" secondAttribute="bottom" constant="44" id="Z5s-28-R1w"/>
+                                                <constraint firstItem="eyT-Ac-4jS" firstAttribute="leading" secondItem="Pxd-qt-GXE" secondAttribute="leading" constant="25" id="ltz-gG-WdT"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nbX-ZI-0qO" secondAttribute="bottom" constant="15" id="qqd-cH-B62"/>
+                                                <constraint firstAttribute="trailing" secondItem="MUb-fd-LHs" secondAttribute="trailing" constant="20" id="rqo-8z-w3g"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="otherAuthorLabel" destination="MUb-fd-LHs" id="bSS-sS-lnJ"/>
+                                            <outlet property="otherQuizSetDescLabel" destination="nbX-ZI-0qO" id="qu1-KS-bfr"/>
+                                            <outlet property="otherQuizSetNameLabel" destination="eyT-Ac-4jS" id="XxJ-0A-BW8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vr6-8X-eNI"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -299,10 +341,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="OtherQuizSetTableView" destination="tPF-fF-4Gq" id="ipU-Sd-Vkg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gm3-7d-eaz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1529" y="1446"/>
+            <point key="canvasLocation" x="1528.985507246377" y="1445.7589285714284"/>
         </scene>
         <!--MY LIBRARY-->
         <scene sceneID="oYt-HH-j2p">

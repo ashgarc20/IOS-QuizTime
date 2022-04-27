@@ -12,8 +12,9 @@ Unit 8: Group Milestone - README
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
 4. [Schema](#Schema)
-5. [Milestone 1 - Build Progress](#Milestone-1-Build-Progress)
-6. [Milestone 2 - Build Progress](#Milestone-2-Build-Progress)
+5. [Milestone 1 Build Progress](#Milestone-1-Build-Progress)
+6. [Milestone 2 Build Progress](#Milestone-2-Build-Progress)
+7. [Milestone 3 Build Progress](#Milestone-3-Build-Progress)
 
 ## Overview
 ### Description
@@ -46,7 +47,7 @@ Quiz Time is an application that allows users to create, save, delete, edit, and
 - [ ] User can edit quiz set names and descriptions
 - [ ] User can edit quiz questions/answers
 - [x] User can view all the quiz sets they have created 
-- [ ] User can view all the quiz sets other users have created
+- [x] User can view all the quiz sets other users have created
 - [ ] User can view all selected quiz set questions and answers 
 - [ ] User can take a quiz from their library
 - [ ] User can take a quiz that other users have posted
@@ -186,16 +187,20 @@ query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
 
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
- ## Milestone 1 - Build Progress
+ ## Milestone 1 Build Progress
  
 <img src='http://g.recordit.co/PyD0lTt1xx.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/C4Y8850uLQ.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/FukCe3tOmg.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
- ## Milestone 2 - Build Progress
+ ## Milestone 2 Build Progress
  
 <img src='http://g.recordit.co/W0TB16lyzO.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/9KtgFxBGFn.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/rDL6zNEGkv.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/LNN8IsNJxs.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 <img src='http://g.recordit.co/HKjj19m3BM.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+ ## Milestone 3 Build Progress
+ 
+<img src='http://g.recordit.co/eGoocrSlfj.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
